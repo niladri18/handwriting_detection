@@ -35,5 +35,5 @@ For Linux:
  
  `run.sh`
  
- After completion, the trained parameters will be saved in `/output` folder.
+ After completion, the trained parameters will be saved in `/output/theta.csv` .
 
