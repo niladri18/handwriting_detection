@@ -43,8 +43,8 @@ _lambda = 0.1
 '''
 SAVE trained THETA in (ans)
 '''
-ans = cf.oneVsAll(data, _lambda)
-np.savetxt("./output/ans.csv", ans, delimiter=",")
+theta = cf.oneVsAll(data, _lambda)
+np.savetxt("./output/theta.csv", theta, delimiter=",")
 print('')
-acc = cf.predictOneVsAll(data, ans)
+acc = cf.predictOneVsAll(data, theta)
 print('Accuracy: ', acc, '%')
